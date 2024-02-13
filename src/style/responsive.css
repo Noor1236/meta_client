@@ -1,0 +1,525 @@
+/* Mobile View Styles */
+
+@media only screen and (max-width: 768px) {
+
+  body {
+    font-size: 16px;
+    /* Adjust the base font size for better readability on smaller screens */
+  }
+
+  .page_width {
+    padding: 10px;
+    /* Adjust padding for better spacing on smaller screens */
+  }
+
+  /* @media screen and (max-width: 768px) { */
+  nav {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .nav_link ul {
+    margin-left: 0;
+  }
+
+  .nav_link li {
+    display: block;
+    padding: 15px;
+  }
+
+  .nav_link li:nth-child(6) {
+    margin-left: 0;
+  }
+
+  .nav_link .search-bar {
+    width: 100%;
+  }
+
+  .background-change-button.left .sun-container,
+  .background-change-button.right .sun-container {
+    transform: translateX(0);
+  }
+
+
+  .banner {
+    margin-bottom: 100px;
+  }
+  
+  .banner .card_b {
+    position: absolute;
+    left: 8%;
+    bottom: -400px;
+    width: 85%; /* Adjust width for responsiveness */
+    max-width: 598px; /* Set a maximum width for larger screens */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #242535;
+    gap: 24px;
+    box-shadow: 0px 12px 24px -6px #181A2A1F;
+    background-color: #181A2A;
+  }
+  
+  .banner .card_b .btn {
+    width: 80px;
+    height: 20px;
+    border-radius: 6px;
+    border: 0;
+    font-family: Work Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 10px;
+    letter-spacing: 0em;
+    background: #4B6BFB;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+  }
+  
+  .banner .card_b h2 {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 275px; /* Make the width 100% for responsiveness */
+    /* max-width: 350px; Set a maximum width for larger screens */
+    color: #FFFFFF;
+    height: 95px; /* Allow height to adjust based on content */
+  }
+  
+  .banner .card_b .card_person_contact {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .banner .card_person_contact img {
+    width: 36px;
+    height: 36px;
+    border-radius: 28px;
+  }
+  
+  .banner .card_person_contact h5 {
+    font-family: Work Sans;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #97989F;
+  }
+  
+  .banner .card_person_contact p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #97989F;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .blog_card {
+    margin: 40px 0;
+  }
+
+  .blog_card h2 {
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    width: 100%;
+    /* Make the width 100% for responsiveness */
+    height: 28px;
+    margin-bottom: 30px;
+  }
+
+  .blog_card .posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Adjust for smaller screens */
+    gap: 16px;
+  }
+
+  .blog_card .post {
+    width: 100%;
+    /* Make the width 100% for responsiveness */
+    height: auto;
+    /* Allow height to adjust based on content */
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #242535;
+    gap: 16px;
+  }
+
+  .blog_card .post img {
+    width: 100%;
+    /* Make the image width 100% for responsiveness */
+    height: auto;
+    /* Allow height to adjust based on content */
+    border-radius: 6px;
+  }
+
+  .blog_card .post .post_card {
+    width: 100%;
+    /* Make the width 100% for responsiveness */
+    height: auto;
+    /* Allow height to adjust based on content */
+    padding: 8px;
+    gap: 20px;
+  }
+
+  .blog_card .post .post_card .btn1 {
+    width: 80px;
+    height: 20px;
+    border-radius: 6px;
+    border: 0;
+    font-family: Work Sans;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 10px;
+    letter-spacing: 0em;
+    background: #4B6BFB0D;
+    color: #4B6BFB;
+    margin-bottom: 15px;
+  }
+
+  .blog_card .post .post_card h2 {
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 100%;
+    /* Make the width 100% for responsiveness */
+    color: #FFFFFF;
+    height: auto;
+    /* Allow height to adjust based on content */
+  }
+
+  .post_card .author {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+
+  .post_card .author img {
+    width: 36px;
+    height: 36px;
+    border-radius: 28px;
+  }
+
+  .post_card .author h5 {
+    font-family: Work Sans;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #97989F;
+  }
+
+  .post_card .author p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #97989F;
+    display: flex;
+    align-items: center;
+  }
+
+  .view button {
+    width: 100%;
+    /* Make the width 100% for responsiveness */
+    height: auto;
+    /* Allow height to adjust based on content */
+    padding: 12px;
+    border-radius: 6px;
+    gap: 12px;
+    border: 1px solid #696A754D;
+    text-align: center;
+    color: #696A75;
+    margin: 40px 0;
+    /* Adjust margin for smaller screens */
+    background-color: #181A2A;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .bg_img .pg_img {
+    width: 100%;
+    /* height: 200px; */
+  }
+
+  .bg_img .img_content {
+    bottom: -155px;
+    padding: 20px;
+  }
+
+  .img_content button {
+    width: 100px;
+  }
+
+  .img_content h2 {
+    font-family: Work Sans;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 300px;
+    height: 203px;
+    color: #FFFFFF;
+  }
+
+  .img_content .author_info {
+    margin-top: -145px;
+    /* margin-bottom: 150px; */
+  }
+
+  .img_content .author_info img{
+    width: 25px;
+    height: 25px;
+  }
+
+  .img_content .author_info h5,
+  .img_content .author_info p{
+    font-size: 13px;
+    line-height: 30px;
+  }
+  
+  .title {
+    width: 100%;
+  }
+
+  .title h2 {
+    font-size: 24px;
+
+  }
+
+  .title h3 {
+    font-size: 14px;
+  }
+
+
+  .inner_author,
+  .inner_single_post {
+    margin: 0 10px;
+  }
+
+  .inner_single_post .img_content .author_info {
+    margin-top: -115px;
+  }
+
+
+  .inner_single_post .post_desc p,
+  .inner_single_post .quote p {
+    width: 100%;
+  }
+
+
+  
+  .inner_single_post .img_content button {
+    width: 101px;
+    height: 35px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .inner_single_post .img_content h2 {
+    width: 100%;
+    line-height: 42px;
+  }
+  
+  .inner_single_post .post_img {
+    margin-top: 30px;
+  }
+  
+  .inner_single_post .post_img img {
+    width: 100%; /* Make the width 100% for responsiveness */
+    height: auto; /* Allow height to adjust based on content */
+    border-radius: 12px;
+  }
+  
+  .inner_single_post .post_desc p {
+    font-family: Source Serif Pro;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #BABABF;
+    width: 100%; /* Make the width 100% for responsiveness */
+    height: auto; /* Allow height to adjust based on content */
+  }
+  
+  .inner_single_post .post_desc h2 {
+    font-family: Work Sans;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    width: 100%; /* Make the width 100% for responsiveness */
+    height: auto; /* Allow height to adjust based on content */
+  }
+  
+  .inner_single_post .quote {
+    width: 100%; /* Make the width 100% for responsiveness */
+    height: auto; /* Allow height to adjust based on content */
+    padding: 10px; /* Adjust padding for smaller screens */
+    border-radius: 12px;
+    border: 0px 0px 0px 4px;
+    gap: 20px; /* Adjust gap for smaller screens */
+    border-left: 4px solid #E8E8EA;
+    background-color: #242535;
+  }
+  
+  .inner_single_post .quote p {
+    font-family: Work Sans;
+    font-size: 20px;
+    /* font-style: italic; */
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    width: 100%; /* Make the width 100% for responsiveness */
+    height: auto; /* Allow height to adjust based on content */
+  }
+ 
+  .quote {
+    padding: 20px;
+  }
+
+  .ads {
+    margin: 10px;
+  }
+
+  .inner_footer {
+    padding: 20px;
+    /* display: grid; */
+    grid-template-columns: 1fr;
+  }
+
+  .outer_footer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .outer_footer .outer_logo .content {
+    margin-left: -120px;
+  }
+
+  .inner_author {
+    padding: 30px 0px 120px 0px; /* Adjust padding for smaller screens */
+    border-radius: 12px;
+    background: #242535;
+  }
+  
+  .auth_detail {
+    text-align: center;
+    width: 100%; /* Make the width 100% for responsiveness */
+    max-width: 668px; /* Set a maximum width for larger screens */
+    margin: 10px auto; /* Center the element and adjust margin for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
+  
+  .auth_detail .auth {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  
+  .auth_detail .auth .auth_img {
+    text-align: right;
+  }
+  
+  .auth_detail .auth .auth_img img {
+    width: 64px;
+    height: 64px;
+    border-radius: 80px;
+  }
+  
+  .auth .auth_info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  
+  .auth .auth_info h5 {
+    font-family: Work Sans;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+  }
+  
+  .auth .auth_info p {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #BABABF;
+  }
+  
+  .auth_detail .detail p {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #BABABF;
+  }
+  
+  .auth_detail .social_link {
+    padding: 20px; /* Adjust padding for smaller screens */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .social_link button {
+    background-color: #696A75;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social_link button:hover {
+    background-color: #181A2A;
+  }
+  
+  
+
+
+}

@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { Route, Router, Routes } from "react-router-dom";
+import Layout from "./global/layout";
+import Index from "./pages/home";
+import TitlePage from "./pages/title";
+import AuthorContact from "./pages/features/authorContact";
+import SinglePost from "./pages/singlePost";
+import CreateBlogPost from "./pages/createBlog";
+import Login from "./pages/loginPage";
+import SignupPage from "./pages/singUp";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    // <ThemeProvider>
+      <div>
+        <Layout>
+          <Routes>
+            <Route path="/" exact element={<Index />} />
+            <Route path="/blogs" exact element={<TitlePage />} />
+            <Route path="/author" exact element={<AuthorContact />} />
+            <Route path="/blog_post/:id" exact element={<SinglePost />} />
+            {/* <privateRoute path="/create_blog" exact element={<CreateBlogPost />}/> */}
+            <Route path="/create_blog" exact element={<CreateBlogPost />} />
+            <Route path="/login" exact element={<Login />} />
+            <Route path="/signUp" exact element={<SignupPage />} />
+          </Routes>
+
+        </Layout>
+      </div>
+    // </ThemeProvider>
+
   );
 }
 
