@@ -3,7 +3,7 @@ import Img from '../../assets/images/author/author_1.png'
 import SPImg from '../../assets/images/single_post_imgs/SP.svg'
 import SPImg1 from '../../assets/images/single_post_imgs/SP_1.svg'
 import Ads from './ads'
-import parse from 'react-html-parser'
+import parse from 'html-react-parser'
 
 
 function Post({blog}) {
