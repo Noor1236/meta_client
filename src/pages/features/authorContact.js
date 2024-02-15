@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Img from '../../assets/images/author/author_1.png'
 import { IoLogoFacebook } from "react-icons/io5";
 import { IoLogoTwitter } from "react-icons/io";
@@ -6,10 +6,25 @@ import { IoLogoInstagram } from "react-icons/io";
 import { IoLogoYoutube } from "react-icons/io";
 import PostCard from '../../global/components/postCard';
 import { postData } from '../../../src/global/utils/data'
-
+import axios from 'axios';
 
 
 function AuthorContact() {
+    const [blogs , setBlogs] = useState(null);
+
+    useEffect(() => {
+        axios.get('https://server-theta-taupe.vercel.app/get_blogs')
+        .then(function (response) {
+            console.log("All data", response)
+            setBlogs(response?.data)
+        })
+        .catch(function (error) {
+            console.log(error)
+        });
+
+    } , [])
+
+
     return (
         <div>
             <div className="author_contact">
@@ -51,13 +66,15 @@ function AuthorContact() {
                 <div className="page_width">
                     {/* <h2>Letest Post</h2> */}
                     <div className="posts">
-                        {
-                            postData.map((item, index) => {
+                    {
+                            blogs?.map((item, index) => {
                                 return (
                                     <PostCard
-                                        img={item.img}
-                                        author={item.author}
-                                        name={item.name}
+                                    key={index}
+                                        id={item._id}
+                                        desc={item.description}
+                                        authorimg={item.author_image}
+                                        Aname={item.author_name}
                                     />
                                 )
                             })

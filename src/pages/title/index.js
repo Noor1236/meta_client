@@ -9,7 +9,7 @@ function TitlePage() {
 
             <Title />
 
-            <Blogs />
+            <Blogs  />
 
             <Ads />
 

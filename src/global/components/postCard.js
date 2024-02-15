@@ -1,6 +1,6 @@
 import React from 'react'
 import Img from '../../assets/images/blog_imgs/Rectangle 38.svg'
-import author1 from '../../assets/images/author/author1.png'
+import author1 from '../../assets/images/author/author_1.png'
 import {Link} from 'react-router-dom'
 
 function PostCard({ img, authorimg, Aname, desc ,id }) {
