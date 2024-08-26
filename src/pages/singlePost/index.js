@@ -8,7 +8,7 @@ function SinglePost() {
   const [blog, setBlog] = useState(null)
 
   useEffect(() => {
-    axios.get(`http://localhost:4000/get_blog/${param.id}`)
+    axios.get(`https://server-theta-taupe.vercel.app/get_blog/${param.id}`)
       .then(function (response) {
         console.log("All data", response)
         setBlog(response?.data)
